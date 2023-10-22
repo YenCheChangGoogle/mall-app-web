@@ -3,7 +3,10 @@ import Request from '@/js_sdk/luch-request/request.js'
 const http = new Request()
 
 http.setConfig((config) => { /* 设置全局配置 */
-	config.baseUrl = 'http://localhost:8085' /* 根域名不同 */
+
+	config.baseUrl = 'http://localhost:8085' /* 連線本機 */
+	/* config.baseUrl = 'https://portal-api.macrozheng.com' */
+	
 	config.header = {
 		...config.header
 	}
